@@ -4,3 +4,4 @@
 * Écran de contrôle de lecture
 * Tri par album, artiste, pistes, playlist
 * Affichage des documents, photos, vidéos
+* Barre de progression
