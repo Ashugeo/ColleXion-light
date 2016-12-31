@@ -30,107 +30,139 @@
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <div class="album-colors"></div>
-    <div class="player">
-        <div class="progress"></div>
-        <div class="info">
-            <img class="cover" src="img/album1.jpg" />
-            <div>
-                <h3 class="title"></h3>
-                <h4 class="artist"></h4>
+    <div id="wrapper">
+        <div class="album-colors"></div>
+        <div class="player">
+            <div class="progress-track">
+                <div class="progress"></div>
             </div>
-        </div>
-    </div>
-    <div class="main">
-        <section class="loading">
-            <div class="logo"></div>
-            <div class="loading-status">
-                <div class="loading-anim"></div>
-                <span>Initializing the awesome...</span>
-            </div>
-        </section>
-        <section class="servers">
-            <ul>
-                <li class="dir">An awesome computer</li>
-                <li class="dir">Another awesome computer</li>
-                <li class="dir">An awesome smartphone</li>
-            </ul>
-        </section>
-        <section class="media">
-            <ul>
-                <li class="dir">Documents</li>
-                <li class="dir">Music</li>
-                <li class="dir">Photos</li>
-                <li class="dir">Videos</li>
-            </ul>
-        </section>
-        <section class="music">
-            <div class="albums-wrapper">
-                <div class="album" data-album="adventure">
-                    <img class="cover" src="img/album4.jpg" />
-                    <h3 class="title">Adventure</h3>
-                    <h4 class="artist">Madeon</h4>
-                </div>
-                <div class="album" data-album="aladdin-sane">
-                    <img class="cover" src="img/album2.jpg" />
-                    <h3 class="title">Aladdin Sane</h3>
-                    <h4 class="artist">David Bowie</h4>
-                </div>
-                <div class="album" data-album="currents">
-                    <img class="cover" src="img/album3.jpg" />
-                    <h3 class="title">Currents</h3>
-                    <h4 class="artist">Tame Impala</h4>
-                </div>
-                <div class="album" data-album="nevermind">
+            <div class="info">
+                <div class="info-song">
                     <img class="cover" src="img/album1.jpg" />
-                    <h3 class="title">Nevermind</h3>
-                    <h4 class="artist">Nirvana</h4>
-                </div>
-                <div class="album" data-album="ram">
-                    <img class="cover" src="img/album5.jpg" />
-                    <h3 class="title">Random Access Memory</h3>
-                    <h4 class="artist">Daft Punk</h4>
-                </div>
-                <div class="album" data-album="resistance">
-                    <img class="cover" src="img/album6.jpg" />
-                    <h3 class="title">The Resistance</h3>
-                    <h4 class="artist">Muse</h4>
-                </div>
-                <div class="album" data-album="solar-echoes">
-                    <img class="cover" src="img/album7.jpg" />
-                    <h3 class="title">Solar Echoes</h3>
-                    <h4 class="artist">Nigel Stanford</h4>
-                </div>
-            </div>
-            <div class="songs">
-                <div class="info">
-                    <img class="cover" src='img/album1.jpg' />
-                    <div>
+                    <div class="song-name">
                         <h3 class="title"></h3>
                         <h4 class="artist"></h4>
                     </div>
                 </div>
+                <div class="buttons">
+                    <div class="button pause"></div>
+                    <div class="button external"></div>
+                </div>
+            </div>
+            <div class="full-player">
+                <h3 class="title"></h3>
+                <h4 class="artist"></h4>
+                <div class="progress-track">
+                    <div class="progress"></div>
+                    <div class="handle"></div>
+                </div>
+                <div class="progress-values">
+                    <span class="elapsed"></span>
+                    <span class="remaining"></span>
+                </div>
+                <div class="buttons">
+                    <div class="button previous"></div>
+                    <div class="button pause"></div>
+                    <div class="button next"></div>
+                </div>
+                <div class="volume-wrap">
+                    <div class="volume-mute"></div>
+                    <div class="volume-track">
+                        <div class="volume">
+                            <div class="handle"></div>
+                        </div>
+                    </div>
+                    <div class="volume-full"></div>
+                </div>
+            </div>
+            <div class="renderers">
                 <ul>
-                    <li class="song"><span class="track">Track 1</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 2</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 3</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 4</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 5</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 6</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 7</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 8</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 9</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 10</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 11</span><span class="duration">3:00</span></li>
-                    <li class="song"><span class="track">Track 12</span><span class="duration">3:00</span></li>
+                    <li class="active-renderer"><img src="img/icon-phone.png" /><span>iPhone de Hugo</span></li>
+                    <li><img src="img/icon-computer.png" /><span>DSAA-9</span></li>
+                    <li><img src="img/icon-phone.png" /><span>iPhone de Solène</span></li>
                 </ul>
             </div>
-        </section>
-
-    </div>
-    <div class="header">
-        <div class="back"><</div>
-        <h1>Nearby devices</h1>
+        </div>
+        <div class="main">
+            <section class="loading">
+                <div class="logo"></div>
+                <div class="loading-status">
+                    <div class="loading-anim"></div>
+                    <span>Initializing the awesome...</span>
+                </div>
+            </section>
+            <section class="servers">
+                <ul>
+                    <li class="dir">An awesome computer</li>
+                    <li class="dir">Another awesome computer</li>
+                    <li class="dir">An awesome smartphone</li>
+                </ul>
+            </section>
+            <section class="media">
+                <ul>
+                    <li class="dir">Documents</li>
+                    <li class="dir">Music</li>
+                    <li class="dir">Photos</li>
+                    <li class="dir">Videos</li>
+                </ul>
+            </section>
+            <section class="music">
+                <div class="albums-wrapper">
+                    <div class="album" data-album="adventure" data-id="955827995">
+                        <img class="cover" src="img/album4.jpg" />
+                        <h3 class="title">Adventure</h3>
+                        <h4 class="artist">Madeon</h4>
+                    </div>
+                    <div class="album" data-album="aladdin-sane" data-id="1039655668">
+                        <img class="cover" src="img/album2.jpg" />
+                        <h3 class="title">Aladdin Sane</h3>
+                        <h4 class="artist">David Bowie</h4>
+                    </div>
+                    <div class="album" data-album="currents" data-id="988638228">
+                        <img class="cover" src="img/album3.jpg" />
+                        <h3 class="title">Currents</h3>
+                        <h4 class="artist">Tame Impala</h4>
+                    </div>
+                    <div class="album" data-album="nevermind" data-id="485495703">
+                        <img class="cover" src="img/album1.jpg" />
+                        <h3 class="title">Nevermind</h3>
+                        <h4 class="artist">Nirvana</h4>
+                    </div>
+                    <div class="album" data-album="ram" data-id="617154241">
+                        <img class="cover" src="img/album5.jpg" />
+                        <h3 class="title">Random Access Memory</h3>
+                        <h4 class="artist">Daft Punk</h4>
+                    </div>
+                    <div class="album" data-album="resistance" data-id="991509751">
+                        <img class="cover" src="img/album6.jpg" />
+                        <h3 class="title">The Resistance</h3>
+                        <h4 class="artist">Muse</h4>
+                    </div>
+                    <div class="album clearfix" data-album="solar-echoes" data-id="940979976">
+                        <img class="cover" src="img/album7.jpg" />
+                        <h3 class="title">Solar Echoes</h3>
+                        <h4 class="artist">Nigel Stanford</h4>
+                    </div>
+                </div>
+                <div class="songs">
+                    <div class="info">
+                        <img class="cover" src='img/album1.jpg' />
+                        <div>
+                            <h3 class="title"></h3>
+                            <h4 class="artist"></h4>
+                        </div>
+                    </div>
+                    <ul>
+                        <!-- <li class="song"><span class="track">Track 1</span><span class="duration">3:00</span></li> -->
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="header">
+            <div class="back"><</div>
+            <h1>Nearby devices</h1>
+        </div>
+        <!-- <div class="cursor"></div> -->
     </div>
 </body>
 </html>
