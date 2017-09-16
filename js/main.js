@@ -4,12 +4,12 @@ var breadcrumb = ["Nearby devices"];
 $(document).ready(function() {
     window.setTimeout(function() {
         $('.loading-status span').html('Scanning the room...');
-    }, 200);
+    }, 2000);
     window.setTimeout(function() {
         $('.main').css('transform', 'translateX(' + -screen*100 + '%)');
         $('.header').addClass('visible');
         $('#wrapper').css('background-position', -screen*320 + 'px');
-    }, 400);
+    }, 4000);
 });
 
 $(document).on('click', '.back', function() {
